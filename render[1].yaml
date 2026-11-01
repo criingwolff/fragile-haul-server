@@ -1,0 +1,8 @@
+# Render reads this when you choose New > Blueprint and pick this repository.
+services:
+  - type: web
+    name: fragile-haul-server
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
